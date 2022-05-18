@@ -1,59 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
-*{
-    margin:0;
+
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Comfortaa', sans-serif;
     list-style: none;
 }
-header{
+
+header {
     max-width: 1920px;
-    margin:auto;
-    height: 11vh;
+    margin: auto;
+    height: 15vh;
     width: 100%;
-    border: solid red;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #128596
-    
-}
-.menu{
-   display: none; 
 }
 
-header figure img{
-    width:4vw;
-    border: solid red;
+.menu {
+    display: none;
 }
-header div{
+
+header figure img {
+    width: 7vw;
+
+}
+
+header div {
     display: flex;
-    justify-content: space-between;
-    border: solid red;
+    justify-content: flex-end;
+
     width: 80%;
 }
-header nav{
-    border: solid red;
-    width: 50% ; 
+
+header nav {
+    width: 50%;
     display: flex;
     justify-content: space-evenly;
 }
 
- header ul{
+header ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-size: 1.5vw;
     width: 100%;
-  
- }
- header li{
-     color: white;
- }
-  input::placeholder::before{
-      content: url(https://bit.ly/3sGa2dX);
-  }
 
-  input{
-      border-radius:  10px;
+}
 
-  }
+header li {
+    color: white;
+}
+
+
+input {
+    border-radius: 10px;
+    padding-left: 1vw;
+    height: 3.9vh;
+    width: 11vw;
+}
+
+
+input::placeholder {
+    text-align: center;
+    background-image: url('./assets/image\ 1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-bob{
+    width: 100%;
+    height: 82vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 229, 172);
+}
+
+.bob{
+    width: 50vw;
+    height: 80vh;
+}
+
+.boxText{
+    position: relative;
+    left:15vw;
+    bottom:13vh;
+    line-height: 1.9;
+}
+
+.boxText h1{
+    color:#128596;
+    font-size:50px; 
+}
+
+
+.boxText ul{
+    color:#DB7948;
+    font-size:25px;
+}
+
+.boxText li:hover{
+    background-color: #FEBD81;
+    cursor: pointer;
+}
+
+@media (max-width:480px){
+    .menu{
+        display: initial;
+    }
+
+    header div{
+        display: none;
+    }
+
+    header{
+        justify-content:space-around;
+    }
+}
