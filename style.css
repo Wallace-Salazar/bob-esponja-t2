@@ -107,6 +107,82 @@ input::placeholder {
     cursor: pointer;
 }
 
+.secondSection{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E2EFF4;
+}
+
+.secondSection h2{
+    color: #128596;
+    font-size:50px;
+}
+
+.borda{
+    width: 10%;
+    color:#698996;
+    border-top:solid;
+    margin-left: 22vw;
+}
+
+.sectionPhotos{
+    position: relative;
+    display: flex;
+    width: 40%;
+    height: 90%;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+
+.sectionPhotos figure{
+    width: 14vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #128596;
+    
+}
+
+
+
+.boxLula:hover::before{
+    content: 'Lula Molusco: Vizinho Do Bob Esponja';
+    background-color: #BF7A59E5;
+    border-radius: 0 0 20px 20px;
+    color: #E2EFF4;
+    position: absolute;
+    width: 14vw;
+    height: 10vh;
+    animation: slide-top 1.5s ease-in-out  1 normal both;
+    cursor: pointer;
+}   
+
+
+
+@keyframes slide-top{
+    0%{
+        top:0vh;
+    }
+    50%{
+        top:2vh;
+    }
+    100%{
+        top:8vh
+    }
+}
+
+
+
+
+
+
+
+
 @media (max-width:480px){
     .menu{
         display: initial;
@@ -120,3 +196,4 @@ input::placeholder {
         justify-content:space-around;
     }
 }
+
